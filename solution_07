@@ -1,0 +1,26 @@
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+// Don't Edit Above Lines to get User Input Properly
+inp.on("close", () => {
+//Write Your Code Here
+//Getting User Input
+var input = userInput[0];
+var output = input.split('');
+var text = output.join(' ');
+
+ // In case you would like to print the input
+
+console.log(text)
+//end-here
+});
+
+
+// for (let i = 0; i < cars.length; i++) {
+//   text += cars[i] + "<br>";
+// }
